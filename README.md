@@ -55,52 +55,74 @@ CRUDを使用したToDoアプリの作成
 
 ❯ tree -a -I "node_modules|.next|.git|.pytest_cache|static" -L 2
 .
-├── .devcontainer
-│   └── devcontainer.json
-├── .env
-├── .github
-│   ├── action
-│   ├── release-drafter.yml
-│   └── workflows
-├── .gitignore
-├── Makefile
-├── README.md
-├── backend
-│   ├── .vscode
-│   ├── application
-│   ├── docs
-│   ├── manage.py
-│   ├── output
-│   ├── poetry.lock
-│   ├── project
-│   └── pyproject.toml
-├── containers
-│   ├── django
-│   ├── front
-│   ├── mysql
-│   └── nginx
-├── docker-compose.yml
-├── frontend
-│   ├── .gitignore
-│   ├── README.md
-│   ├── __test__
+├── todo-frontend-file
 │   ├── components
-│   ├── features
+│   │   └── CreateTodoForm.tsx
+│   │   └── DeleteTodoButton.tsx
+│   │   └── EditTodoForm.tsx
+│   │   └── Todo.tsx
+│   │   └── Todos.tsx
 │   ├── next-env.d.ts
+│   ├── next.config.js
+│   ├── node_modules
+│   │   └── [依存関係のライブラリ]
 │   ├── package-lock.json
 │   ├── package.json
 │   ├── pages
+│   │   └── _app.tsx
+│   │   └── _document.tsx
+│   │   └── api
+│   │   └── index.tsx
+│   │   └── todos
 │   ├── postcss.config.js
 │   ├── public
+│   │   └── favicon.ico
+│   │   └── next.svg
+│   │   └── vercel.svg
+│   ├── README.md
 │   ├── styles
-│   ├── tailwind.config.js
-│   └── tsconfig.json
-└── infra
-    ├── .gitignore
-    ├── docker-compose.yml
-    ├── main.tf
-    ├── network.tf
-    └── variables.tf
+│   │   └── globals.css
+│   ├── tailwind.config.ts
+│   ├── tsconfig.json
+│   └── types
+│       └── Todo.ts
+└── todo-backend-file
+    ├── app
+    │   └── channels
+    │   └── controllers
+    │   └── jobs
+    │   └── mailers
+    │   └── models
+    │   └── views
+    ├── bin
+    │   └── rails
+    │   └── rake
+    │   └── setup
+    ├── config
+    │   └── [アプリケーションの設定ファイル]
+    ├── config.ru
+    ├── db
+    │   └── development.sqlite3
+    │   └── migrate
+    │   └── schema.rb
+    │   └── seeds.rb
+    ├── Gemfile
+    ├── Gemfile.lock
+    ├── lib
+    │   └── tasks
+    ├── log
+    │   └── development.log
+    ├── public
+    │   └── robots.txt
+    ├── Rakefile
+    ├── README.md
+    ├── storage
+    │   └── [アップロードされたファイルのストレージ]
+    ├── tmp
+    │   └── [一時ファイル]
+    └── vendor
+        └── [サードパーティのコード]
+
 
 
 ## 開発環境構築
