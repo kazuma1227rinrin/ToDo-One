@@ -54,6 +54,7 @@ CRUDを使用したToDoアプリの作成
 <!-- Treeコマンドを使ってディレクトリ構成を記載 -->
 
 ❯ tree -a -I "node_modules|.next|.git|.pytest_cache|static" -L 2
+<pre>
 .
 ├── todo-frontend-file
 │   ├── components
@@ -122,6 +123,7 @@ CRUDを使用したToDoアプリの作成
     │   └── [一時ファイル]
     └── vendor
         └── [サードパーティのコード]
+</pre>
 
 
 
